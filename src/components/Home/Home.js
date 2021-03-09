@@ -14,7 +14,7 @@ const Home = () => {
             <h1>Countries: {countries.length}</h1>
             <div className="d-flex flex-wrap justify-content-around">
                 {
-                    countries.map(country => <Country country={country}></Country>)
+                    countries.map(country => <Country key={country.numericCode} country={country}></Country>)
                 }
             </div>
 
